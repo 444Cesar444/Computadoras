@@ -1,10 +1,11 @@
 package mundoPc;
+
 import java.util.*;
 
 public class Dispositivos {
 
     private String tipoEntrada,
-                   marca;
+            marca;
     private int contador;
 
     /*Atributo statico (comparte la informacion)*/

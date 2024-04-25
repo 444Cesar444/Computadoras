@@ -7,11 +7,11 @@ import mundoPc.Teclado;
 public class TestPC {
     public static void main(String[] args) {
 
-        Teclado teclado = new Teclado(1, "Logitech", "USB");
+        Teclado teclado = new Teclado("Logitech", "USB");
         System.out.println(teclado);
         System.out.println();
 
-        Teclado teclado2 = new Teclado(2, "HP", "USB");
+        Teclado teclado2 = new Teclado("HP", "USB");
         System.out.println(teclado2);
 
 

@@ -2,15 +2,15 @@ package mundoPc;
 
 public class Raton extends Dispositivos {
 
-    private int idRaton,
-                contador;
+    /*final es un atributo que no puede cambiar (constante)*/
+    private final int idRaton;
 
     private static int contadorRatones;
 
-    public Raton(int idRaton, String marca, String tipoEntrada) {
+    public Raton(String marca, String tipoEntrada) {
         super(tipoEntrada, marca);
-        this.idRaton = idRaton;
-        this.contador = ++Raton.contadorRatones;
+        this.idRaton = ++Raton.contadorRatones; //Asignamos el valor del atributo statico
+
 
     }
 

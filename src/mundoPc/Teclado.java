@@ -2,14 +2,14 @@ package mundoPc;
 
 public class Teclado extends Dispositivos {
     private int idTeclado,
-                contador;
+            contador;
 
     private static int contadorTeclados;
 
-    public Teclado(int idTeclado, String marca, String tipoEntrada) {
-        super(tipoEntrada, marca);
-        this.idTeclado = idTeclado;
-        ++Teclado.contadorTeclados; //incremento el atributo statico
+    public Teclado(String marca, String tipoEntrada) {
+        super(marca, tipoEntrada);
+        this.idTeclado = ++Teclado.contadorTeclados;
+        //incremento el atributo statico y asignamos el valor
 
     }
 
