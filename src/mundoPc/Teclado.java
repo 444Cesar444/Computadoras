@@ -1,13 +1,22 @@
 package mundoPc;
 
-public class Teclado {
+public class Teclado extends Dispositivos {
     private int idTeclado,
-                contadorTeclados;
+                contador;
 
-    public Teclado(int idTeclado, int contadorTeclados) {
+    private static int contadorTeclados;
+
+    public Teclado(int idTeclado, String marca, String tipoEntrada) {
+        super(tipoEntrada, marca);
         this.idTeclado = idTeclado;
-        this.contadorTeclados = contadorTeclados;
+        ++Teclado.contadorTeclados; //incremento el atributo statico
+
     }
 
-
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", idTeclado =" + idTeclado +
+                '}';
+    }
 }
